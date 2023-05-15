@@ -10,7 +10,7 @@
     height:68px;
 }
 
-.navigation nav ul{
+.navigation {
     display: flex;
     gap: 57px;
 }

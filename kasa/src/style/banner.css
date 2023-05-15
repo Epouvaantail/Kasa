@@ -17,14 +17,13 @@
 }
 
 .home__banner h1 {
-    position: absolute;
-    width: 60%;
+    position: relative;
+    color: #ffffff;
+    font-style: normal;
     font-weight: 500;
     font-size: 48px;
-    color: #ffffff;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    line-height: 142.6%;
+    margin-top: -150px;
 }
 
 .breakline {
