@@ -1,29 +1,17 @@
-.footer-kasa {
-    background: #000000;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    height: 210px;
+main {
+    margin: 63px 100px auto 100px;
+}
+
+.card__box {
+    background: #F7F7F7;
     width: 100%;
-  }
-  .footer-kasa img {
-    width: 100px;
-    margin-top: 40px;
-    margin-bottom: 50px;
-  }
-  .footer-kasa p {
-    font-style: normal;
-    font-weight: 500;
-    color: #ffffff;
-    font-size: 24px;
-  }
-  
-  @media screen and (max-width: 950px) {
-    .footer-kasa p {
-      font-size: 12px;
-    }
-    .footer-kasa img {
-      margin-bottom: 20px;
-    }
-  }
+    border-radius: 25px;
+}
+
+.cards {
+    margin: 56px 50px 56px 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap:60px;
+}

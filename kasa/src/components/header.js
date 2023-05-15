@@ -5,8 +5,8 @@ import logoKasa from "../assets/images/logo_kasa.svg";
 
 const Header = () => {
   return (
-    <div className="navigation-container">
-      <div className="header-logo-container">
+    <div className="nav__container">
+      <div className="kasa__logo">
         <img src={logoKasa} alt="logo kasa" />
       </div>
       <div className="navigation">
@@ -15,7 +15,7 @@ const Header = () => {
             <NavLink
               to="/"
               className={({ isActive }) => {
-                return isActive ? "nav-link active-link" : "nav-link";
+                return isActive ? "nav__link active__link" : "nav__link";
               }}
             >
               Accueil
@@ -23,7 +23,7 @@ const Header = () => {
             <NavLink
               to="/about"
               className={({ isActive }) => {
-                return isActive ? "nav-link active-link" : "nav-link";
+                return isActive ? "nav__link active__link" : "nav__link";
               }}
             >
               À Propos

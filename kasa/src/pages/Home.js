@@ -8,13 +8,13 @@ import data from "../data/logement.json";
 
 const Home = () => {
   return (
-    <div className="home-container">
+    <main>
       <Banner props={Logo} />
-      <div className="home-card-container">
-        <ul>
+      <section className="card__box">
+        <div className="cards">
           {data.map((acc) => {
             return (
-              <li key={acc.id}>
+              <div key={acc.id}>
                 <Link to={{ pathname: `/logement/${acc.id}` }}>
                   <Card
                     props={{
@@ -23,12 +23,12 @@ const Home = () => {
                     }}
                   />
                 </Link>
-              </li>
+              </div>
             );
           })}
-        </ul>
-      </div>
-    </div>
+        </div>  
+      </section>
+    </main>
   );
 };
 export default Home;
