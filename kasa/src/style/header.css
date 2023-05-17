@@ -5,6 +5,7 @@
     justify-content: space-between;
     margin: auto 100px auto 100px
 }
+
 .kasa__logo img{
     width:210.32px;
     height:68px;
@@ -24,4 +25,27 @@
     text-align: right;
     text-decoration-line: underline;
     color: #FF6060;
+    white-space: nowrap;
+}
+
+@media screen and (max-width: 426px) {
+
+    .nav__container{
+        margin: 20px;
+        gap: 50px;
+    }
+
+    .navigation {
+        display: flex;
+        gap: 20px;
+    }
+
+    .kasa__logo img{
+        width: 145px;
+        height:47px;
+    }
+
+    .nav__link {
+        font-size: 12px;
+    }
 }

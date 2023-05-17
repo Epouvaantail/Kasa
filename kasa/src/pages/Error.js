@@ -1,18 +1,14 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import "../style/Error.css"
 
 const Error = () => {
   return (
     <main>
-      <p>404</p>
-      <p>Oups! La page que vous demandez n'existe pas.</p>
-      <NavLink
-            to="/"
-            className={({ isActive }) => {
-              return isActive ? "nav__link active__link" : "nav__link";
-            }}
-          >
-            Retourner sur la page d'accueil
+      <h1>404</h1>
+      <h2>Oups! La page que vous demandez n'existe pas.</h2>
+      <NavLink to="/" >
+            <p>Retourner sur la page d'accueil</p>
           </NavLink>
     </main>
   );

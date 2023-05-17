@@ -6,6 +6,8 @@ main {
     background: #F7F7F7;
     width: 100%;
     border-radius: 25px;
+    display: flex;
+    margin-bottom: 100px;
 }
 
 .cards {
@@ -14,4 +16,25 @@ main {
     flex-direction: row;
     flex-wrap: wrap;
     gap:60px;
+    justify-content: center;
+}
+
+@media screen and (max-width: 426px) {
+     
+    main {
+        margin: 83px 20px 64px 20px;
+    }
+
+    .card__box {
+        background-color: white;
+    }
+
+    .cards {
+        margin: 0px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+    }
 }

@@ -8,16 +8,20 @@
 
 .card h3 {
     position: absolute;
-    z-index: 1;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
     line-height: 142.6%;
-    display: flex;
-    align-items: flex-end;
     color: #FFFFFF;
     margin-top: -70px;
     margin-left: 20px;
 
+}
+
+@media screen and (max-width: 426px) {
+    .card img {
+        height: 255px;
+        width: 335px;
+    }
 }

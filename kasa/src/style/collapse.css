@@ -1,0 +1,35 @@
+.collapses {
+    margin-bottom: 170px;
+    margin-left: 208px;
+    margin: 31px 150px 170px 150px;
+}
+
+.collapse__box {
+    background-color: #FF6060;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 31px;
+    height: 47px;
+}
+
+
+.collapse__box p {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 142.6%;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+    margin-left: 19.08px;
+}
+
+.collapse__box img {
+    width: 24px;
+    height: 13.71px;
+    margin-right: 17.29px;
+    cursor: pointer;
+}
