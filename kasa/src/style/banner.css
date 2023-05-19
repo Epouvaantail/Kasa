@@ -33,9 +33,11 @@
 @media screen and (max-width: 426px) {
 
     .home__banner {
+        width: 335px;
         height: 111px;
         border-radius: 10px;
         margin-bottom: 22px;
+        margin-left: 25px;
     }
 
     .home__banner img {

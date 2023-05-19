@@ -3,7 +3,6 @@ import { Routes, Route } from "react-router-dom";
 import Home from "../pages/Home.js";
 import About from "../pages/About.js"
 import Error from "../pages/Error.js"
-// import Error from "../pages/Error.js"
 
 const router = () => {
   return (
