@@ -1,7 +1,13 @@
+.card {
+    position: relative;
+    width: 340px;
+    height: 340px;
+}
+
 .card img {
     position: relative;
     z-index: 0;
-    width: 340px;
+    width: 100%;
     height: 340px;
     border-radius: 10px;
 }
