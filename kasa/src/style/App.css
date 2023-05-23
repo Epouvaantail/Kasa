@@ -5,3 +5,9 @@
   padding-top: 50px;
   font-family: "Montserrat";
 }
+
+@media screen and (max-width: 426px) {
+  .App {
+    padding-top: 0px;
+  }
+}

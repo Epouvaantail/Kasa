@@ -26,8 +26,14 @@
 }
 
 @media screen and (max-width: 426px) {
+
+    .card {
+        width: 100%;
+        height: auto;
+    }
+
     .card img {
         height: 255px;
-        width: 335px;
+        width: 100%;
     }
 }
