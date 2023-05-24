@@ -1,20 +1,17 @@
-import * as React from 'react';
-import { Routes, Route, useParams } from 'react-router-dom';
-import { useNavigate } from "react-router-dom";
+// import React, { useEffect } from "react";
+// import { useParams } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
+// import dataAccomodation from "../data/logement.json";
+import Carousel from "../components/carousel";
+import "../style/Logement.css"
 
-function ProfilePage() {
-  // Get the userId param from the URL.
-  let { userId } = useParams();
-  // ...
+const Logement = () => {
+  // const { id } = useParams();
+  // const navigate = useNavigate();
+  // const data = dataAccomodation.find((item) => item.id === id);
+  return(
+      <Carousel />
+  )
 }
 
-function App() {
-  return (
-    <Routes>
-      <Route path="users">
-        <Route path=":userId" element={<ProfilePage />} />
-        <Route path="me" element={...} />
-      </Route>
-    </Routes>
-  );
-}
+export default Logement
