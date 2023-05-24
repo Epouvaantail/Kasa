@@ -1,0 +1,19 @@
+.carousel__container {
+    width: 100%;
+    height:415px;
+    background-color:#FF6060;;
+    mix-blend-mode: normal;
+    border-radius: 25px;
+    margin: 20px 100px 24px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.arrow__left {
+    margin-left: 23.36px;
+}
+
+.arrow__right {
+    margin-right: 23.36px;
+}
