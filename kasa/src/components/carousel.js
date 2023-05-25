@@ -13,9 +13,8 @@ const Carousel = () => {
                 <img className="arrow__left" src={ArrowLeft} alt="arrow left"/>
 		        <img className="arrow__right" src={ArrowRight} alt="arrow right"/>
             </div>
+            <p className="number"> / </p>
             {/* <img src={id.cover} alt={} /> */}
-		    <div className="number">
-		    </div>
 	    </div>
     );
 };
