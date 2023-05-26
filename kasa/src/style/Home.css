@@ -19,6 +19,9 @@ main {
     justify-content: center;
 }
 
+.card__place {
+    width: 30%;
+}
 @media screen and (max-width: 426px) {
      
     main {
