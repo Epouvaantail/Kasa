@@ -3,3 +3,9 @@
     flex-direction: column;
     justify-content: center;
 }
+
+.collapses {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
