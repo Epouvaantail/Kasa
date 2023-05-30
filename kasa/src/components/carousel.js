@@ -23,8 +23,8 @@ const Carousel = (images) => {
         <div className="carousel">
             <div className="carousel__container">
                 <img onClick={slideLeft} className="arrow__left" src={ArrowLeft} alt="arrow left"/>
+                <img className="carousel__img" src={currentPicture} alt="chambre"/>
 		        <img onClick={slideRight} className="arrow__right" src={ArrowRight} alt="arrow right"/>
-                <img className="carouel__img" src={currentPicture} alt="chambre"/>
             </div>
             <p className="number"> {counter +1}/{slideLength}  </p>
 	    </div>

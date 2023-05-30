@@ -34,49 +34,42 @@ const Logement = () => {
   }
 
   return (
-    <div className="logement-container">
+    <div className="logement__container">
       <Slider images={data.pictures} />
-
-      <div className="infos-container">
+      <div className="infos__container">
         <div className="logement">
-          <div className="logement-header">
-            <h1 className="logement-title">{data.title}</h1>
-            <h2 className="logement-location">{data.location}</h2>
+          <div className="logement__header">
+            <div className="part1">
+            <h1>{data.title}</h1>
+            <div className="logement__host">
+              <p>{data.host.name}</p>
+              <img src={data.host.picture} alt={"photo de profil de " + data.host.name}/>
+            </div>
+            </div>
+            <h2>{data.location}</h2>
           </div>
         </div>
-
-        <div className="logement-tags-stars">
+        <div className="logement__tags__stars">
           <ul className="tags">
             {data.tags.map((tag, index) => (
-              <li className="logement-tag" key={index}>
+              <li className="tag" key={index}>
                 {tag}
               </li>
             ))}
           </ul>
-
           <div className="user">
-            <div className="logement-host">
-              <p>{data.host.name}</p>
-              <img
-                src={data.host.picture}
-                alt={"photo de profil de " + data.host.name}
-              />
-            </div>
-
-            <div className="logement-stars">
-              <div className=" filled-star-container "> {stars}</div>
-              <div className=" empty-star-container">
-                <img src={GreyStar} alt="note" className="star empty-star"/>
-                <img src={GreyStar} alt="note" className="star empty-star"/>
-                <img src={GreyStar} alt="note" className="star empty-star"/>
-                <img src={GreyStar} alt="note" className="star empty-star"/>
-                <img src={GreyStar} alt="note" className="star empty-star"/>
+            <div className="logement__stars">
+              <div className=" red__star__box "> {stars}</div>
+              <div className=" grey__star__box">
+                <img src={GreyStar} alt="note" className="star grey__star"/>
+                <img src={GreyStar} alt="note" className="star grey__star"/>
+                <img src={GreyStar} alt="note" className="star grey__star"/>
+                <img src={GreyStar} alt="note" className="star grey__star"/>
+                <img src={GreyStar} alt="note" className="star grey__star"/>
               </div>
             </div>
           </div>
-
-          <div className="collapse-container">
-            <div className="collapse-description">
+          <div className="collapse__box">
               {Data[0] && (
                 <Collapse
                   state={{
@@ -85,9 +78,6 @@ const Logement = () => {
                   }}
                 />
               )}
-            </div>
-
-            <div className="collapse-equipment">
               {Data[0] && (
                 <Collapse
                   state={{
@@ -96,7 +86,6 @@ const Logement = () => {
                   }}
                 />
               )}
-            </div>
           </div>
         </div>
       </div>

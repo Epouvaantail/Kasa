@@ -1,6 +1,5 @@
 .carousel__container {
     height:415px;
-    background-color:#FF6060;;
     mix-blend-mode: normal;
     border-radius: 25px;
     margin: 20px 100px 24px 100px;
@@ -9,11 +8,23 @@
     align-items: center;
 }
 
+.carousel__img {
+    position: relative;
+    height: 415px;
+    width: 100%;
+    border-radius: 25px;
+}
+
 .arrow__left {
+    position: absolute;
+    z-index: 1;
     margin-left: 23.36px;
 }
 
 .arrow__right {
+    position: absolute;
+    z-index: 1;
+    right: 100px;
     margin-right: 23.36px;
 }
 

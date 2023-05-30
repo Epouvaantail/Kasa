@@ -32,6 +32,10 @@ main {
         background-color: white;
     }
 
+    .card__place {
+        width: 100%;
+    }
+
     .cards {
         margin: 0px;
         display: flex;
