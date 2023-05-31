@@ -9,9 +9,10 @@ import Data from "../data/logement.json";
 import "../style/main.css";
 
 const Logement = () => {
+  
+  const data = Data.find((item) => item.id === id);
   const { id } = useParams();
   const navigate = useNavigate();
-  const data = Data.find((item) => item.id === id);
 
   useEffect(() => {
     if (!data) {
