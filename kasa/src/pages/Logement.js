@@ -1,23 +1,19 @@
-import React, { useEffect } from "react";
 import { useParams } from "react-router-dom";
-import { useNavigate } from "react-router-dom";
 import Slider from "../components/carousel";
 import Collapse from "../components/collapse";
 import GreyStar from "../assets/images/greystar.svg";
 import RedStar from "../assets/images/redstar.svg";
 import Data from "../data/logement.json";
 import "../style/main.css";
+import Error from "./Error"
 
 const Logement = () => {
   const { id } = useParams();
-  const navigate = useNavigate();
   const data = Data.find((item) => item.id === id);
 
-  useEffect(() => {
-    if (!data) {
-      navigate("./Error");
-    }
-  }, [data, navigate]);
+if (!data) {
+  return <Error />
+}
 
   const numberStars = parseInt(data.rating);
   const stars = [];
