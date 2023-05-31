@@ -1,5 +1,5 @@
 import React from "react";
-import "../style/header.css";
+import "../style/main.css";
 import { NavLink } from "react-router-dom";
 import logoKasa from "../assets/images/logo_kasa.svg";
 
@@ -13,7 +13,7 @@ const Header = () => {
           <NavLink
             to="/"
             className={({ isActive }) => {
-              return isActive ? "nav__link" : "nav__link";
+              return isActive ? "nav__link active__link" : "nav__link";
             }}
           >
             Accueil
@@ -21,7 +21,7 @@ const Header = () => {
           <NavLink
             to="/About"
             className={({ isActive }) => {
-              return isActive ? "nav__link" : "nav__link";
+              return isActive ? "nav__link active__link" : "nav__link";
             }}
           >
             A Propos

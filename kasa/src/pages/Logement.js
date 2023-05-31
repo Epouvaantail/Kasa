@@ -6,7 +6,7 @@ import Collapse from "../components/collapse";
 import GreyStar from "../assets/images/greystar.svg";
 import RedStar from "../assets/images/redstar.svg";
 import Data from "../data/logement.json";
-import "../style/Logement.css";
+import "../style/main.css";
 
 const Logement = () => {
   const { id } = useParams();
@@ -40,55 +40,57 @@ const Logement = () => {
         <div className="logement">
           <div className="logement__header">
             <div className="part1">
-            <h1>{data.title}</h1>
-            <div className="logement__host">
-              <p>{data.host.name}</p>
-              <img src={data.host.picture} alt={"photo de profil de " + data.host.name}/>
-            </div>
+              <h1>{data.title}</h1>
             </div>
             <h2>{data.location}</h2>
           </div>
-        </div>
-        <div className="logement__tags__stars">
-          <ul className="tags">
-            {data.tags.map((tag, index) => (
-              <li className="tag" key={index}>
-                {tag}
-              </li>
-            ))}
-          </ul>
-          <div className="user">
-            <div className="logement__stars">
-              <div className=" red__star__box "> {stars}</div>
-              <div className=" grey__star__box">
-                <img src={GreyStar} alt="note" className="star grey__star"/>
-                <img src={GreyStar} alt="note" className="star grey__star"/>
-                <img src={GreyStar} alt="note" className="star grey__star"/>
-                <img src={GreyStar} alt="note" className="star grey__star"/>
-                <img src={GreyStar} alt="note" className="star grey__star"/>
-              </div>
-            </div>
+          <div className="logement__tags">
+            <ul className="tags">
+              {data.tags.map((tag, index) => (
+                <li className="tag" key={index}>
+                  {tag}
+                </li>
+              ))}
+            </ul>
           </div>
-          <div className="collapse__box">
-              {Data[0] && (
-                <Collapse
-                  state={{
-                    title: "Description",
-                    description: Data[0].description,
-                  }}
-                />
-              )}
-              {Data[0] && (
-                <Collapse
-                  state={{
-                    title: "Equipments",
-                    equipments: Data[0].equipments,
-                  }}
-                />
-              )}
+        </div>
+        <div className="user">
+          <div className="logement__host">
+            <p>{data.host.name}</p>
+            <img src={data.host.picture} alt={"photo de profil de " + data.host.name}/>
+          </div>
+          <div className="logement__stars">
+            <div className=" grey__star__box">
+              <img src={GreyStar} alt="note" className="star grey__star"/>
+              <img src={GreyStar} alt="note" className="star grey__star"/>
+              <img src={GreyStar} alt="note" className="star grey__star"/>
+              <img src={GreyStar} alt="note" className="star grey__star"/>
+              <img src={GreyStar} alt="note" className="star grey__star"/>
+            </div>
+            <div className=" red__star__box "> {stars}</div>
           </div>
         </div>
       </div>
+      <div className="description">
+          <div className="collapse__box">
+            {Data[0] && (
+              <Collapse
+                state={{
+                  title: "Description",
+                  description: Data[0].description,
+                }}
+             />
+            )}
+            {Data[0] && (
+              <Collapse
+                state={{
+                  title: "Equipments",
+                  equipments: Data[0].equipments,
+                }}
+              />
+            )}
+          </div>
+        </div>
     </div>
   );
 };

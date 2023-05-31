@@ -2,7 +2,7 @@ import React from "react";
 import { useState } from "react";
 import ArrowDown from "../assets/images/arrowdown.png";
 import ArrowUp from "../assets/images/arrowup.png"
-import "../style/collapse.css";
+import "../style/main.css";
 
 const Collapse = ({ state, defaultState = false }) => {
   const [toggle, setToggle] = useState(defaultState);
@@ -26,7 +26,7 @@ const Collapse = ({ state, defaultState = false }) => {
         ) : (
           <div>
             {state.equipments.map((equipment, index) => (
-              <p key={index}>{equipment}</p>
+              <li key={index}>{equipment}</li>
             ))}
           </div>
         )}

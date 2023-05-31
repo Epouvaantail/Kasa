@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "../style/Home.css";
+import "../style/main.css";
 import Banner from "../components/banner";
 import Card from "../components/card";
 import data from "../data/logement.json";

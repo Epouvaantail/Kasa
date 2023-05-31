@@ -23,9 +23,13 @@
     font-size: 24px;
     line-height: 142.6%;
     text-align: right;
-    text-decoration-line: underline;
     color: #FF6060;
     white-space: nowrap;
+    text-decoration: none;
+}
+
+.active__link {
+    text-decoration-line: underline;
 }
 
 @media screen and (max-width: 426px) {

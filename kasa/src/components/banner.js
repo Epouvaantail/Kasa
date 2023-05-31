@@ -1,5 +1,5 @@
 import React from "react";
-import "../style/banner.css";
+import "../style/main.css";
 import Cliff from "../assets/images/falaise.png";
 import { useLocation } from "react-router-dom";
 

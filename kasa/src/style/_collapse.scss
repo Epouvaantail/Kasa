@@ -44,6 +44,7 @@
     opacity: 0;
     height: 0;
   }
+
   .collapse__text p {
     font-family: "Montserrat";
     font-style: normal;
@@ -56,13 +57,32 @@
     display: contents;
   }
 
+  .collapse__text li {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 142.6%;
+    color: #ff6060;
+    list-style-type: none;
+  }
+
 @media screen and (max-width: 426px) {
   .collapse__title{
     width: 100%;
+    height: 30px;
+    h3 {
+      font-size: 13px;
+    }
   }
 
   .collapse__text {
     width: 100%;
+    padding: 23.08px 6.9px 52.58px 11.51px;
+    p {
+      font-size: 12px;
+      margin-bottom: 52px;
+    }
   }
 
   .arrowDown {

@@ -1,5 +1,5 @@
 import React from "react";
-import "../style/About.css";
+import "../style/main.css";
 import Montain from "../assets/images/montagne.png";
 import Collapse from "../components/collapse";
 
@@ -10,7 +10,7 @@ const About = () => {
         <div className="about__banner">
           <img src={Montain} alt="banner about"/>
         </div>
-        <section>
+        <section className="collapse__placement">
         <Collapse
           state={{
             title: "Fiabilité",

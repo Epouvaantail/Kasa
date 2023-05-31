@@ -11,7 +11,7 @@ main {
 }
 
 .cards {
-    margin: 56px 50px 56px 50px;
+    margin: 56px 0px 56px 0px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -20,7 +20,7 @@ main {
 }
 
 .card__place {
-    width: 30%;
+    width: 27.42%;
 }
 @media screen and (max-width: 426px) {
      

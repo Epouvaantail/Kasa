@@ -13,6 +13,7 @@
     height: 415px;
     width: 100%;
     border-radius: 25px;
+    object-fit: cover;
 }
 
 .arrow__left {
@@ -40,7 +41,13 @@
     
     .carousel__container {
         height: 255px;
-        margin: 27px 20px 15px 20px;
+        margin: 27px 20px 0px 20px;
+        border-radius: 10px;
+    }
+
+    .carousel__img {
+        height: 255px;
+        border-radius: 10px;
     }
 
     .arrow__left {
@@ -51,9 +58,10 @@
     .arrow__right {
         width: 11.67px;
         height: 19.8px;
+        right: 20px;
     }
 
     .number {
-        top: -50px;
+        top: -35px;
     }
 }

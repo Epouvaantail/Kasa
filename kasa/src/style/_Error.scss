@@ -31,6 +31,10 @@ p {
   color: #FF6060;
 }
 
+.nav__home {
+  margin-bottom: 135px;
+}
+
 @media screen and (max-width: 426px) {
   h1 {
     font-size: 96px;
@@ -43,4 +47,9 @@ p {
   p {
     font-size: 14px;
   }
+
+  .nav__home {
+    margin-bottom: 235px;
+  }
+
   }

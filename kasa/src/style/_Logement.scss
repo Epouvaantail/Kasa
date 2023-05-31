@@ -1,0 +1,249 @@
+.carousel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.infos__container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.collapses {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.logement__header {
+    display: flex;
+    flex-direction: column;
+    color: #FF6060;
+    text-align: left;
+    margin-top: 0;
+    margin-left: 100px;
+}
+
+.part1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.part1 h1 {
+    text-align: left;
+    margin-top: 0;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 142.6%;
+}
+
+.logement__host {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right:100px;
+    gap: 10px;
+}
+
+.logement__host img {
+    height: 64px;
+    border-radius: 60px;
+}
+
+.logement__host p{
+    text-decoration: none;
+    width: 50%;
+    text-align: right;
+}
+
+.logement__header h2 {
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.tags{
+    display: flex;
+    flex-direction: row;
+    margin-left: 100px;
+    list-style-type: none;
+    gap: 10px;
+}
+
+.tag{
+    background-color: #FF6060;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    color: white;
+    height: 25px;
+    width: 150px;
+    font-size: 14.26px;
+    white-space: nowrap;
+    padding: 10px;
+}
+
+.user {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 34px;
+}
+
+.description {
+    margin-left: 65px;
+    margin-right: 65px;
+}
+
+.collapse__box {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 14px;
+}
+
+.description .collapse .collapse__title {
+    height: 52px;
+}
+
+.description .collapse .collapse__text {
+    height: 249px;
+}
+
+.star{
+    height: 24px;
+    width: 24px;
+}
+
+.logement__stars {
+    display: flex;
+}
+
+.red__star__box {
+    position: relative;
+    display: flex;
+    gap: 15px;
+    margin-left: 0px;
+}
+
+.grey__star__box {
+    display: flex;
+    gap: 15px;
+    margin-right: -180px;
+}
+
+@media screen and (max-width: 426px) {
+
+    .logement__header {
+        margin-left: 20px;
+    }
+
+    .tag {
+        border-radius: 5px;
+    }
+
+    .part1 {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .part1 h1 {
+        font-size: 18px;
+    }
+    
+    .logement__header h2 {
+        font-size: 14px;
+    }
+
+    .tags{
+        margin-left: 20px;
+        flex-wrap: wrap;
+        .tag{
+            background-color: #FF6060;
+            border-radius: 5px;
+            height: 18px;
+            width: 84px;
+            font-size: 10px;
+        }
+    }
+
+    .user {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content:space-between ;
+        margin-left: 20px;
+    }
+
+    .infos__container {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .logement__host {
+        margin-top: 16.5px;
+        margin-right: 20px;
+        img {
+            height: 32px;
+            border-radius: 60px;
+        }
+        p{
+            text-decoration: none;
+            width: 50%;
+            text-align: right;
+            font-size: 12px;
+        }
+    }
+
+    .star{
+        height: 13px;
+        width: 13.41px;
+    }
+
+    .red__star__box {
+        gap: 6.59px;
+        margin-left: 0px;
+    }
+    
+    .grey__star__box {
+        gap: 6.59px;
+        margin-right: -95px;
+    }
+
+    .logement__stars {
+        margin-top: 20px;
+    }
+
+    .description {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 64.5px;
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+
+    .collapse__box {
+        flex-direction: column;
+        .collapse {
+            .collapse__title{
+                height: 29.93px;
+                width: 100%;
+                h3 {
+                    font-size: 13px;
+                }
+            }
+            .collapse__text {
+                height: 143px;
+                p {
+                    font-size: 12px;
+                }
+                li {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}
