@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "../style/main.css";
 import ArrowLeft from"../assets/images/ArrowLeft.svg";
 import ArrowRight from "../assets/images/ArrowRight.svg";
@@ -19,6 +19,15 @@ const Carousel = (images) => {
         setCounter((counter + 1) % slideLength);
       };
 
+      useEffect(() => {
+        if (pictures.length===1) {
+          document.querySelector(".arrow__left").remove(".arrow__left");
+          document.querySelector(".arrow__right").remove(".arrow__");
+          document.querySelector(".number").remove(".number");
+        }
+      })
+      
+
     return (
         <div className="carousel">
             <div className="carousel__container">
@@ -30,4 +39,6 @@ const Carousel = (images) => {
 	    </div>
     );
 };
+
+
 export default Carousel
