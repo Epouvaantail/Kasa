@@ -107,10 +107,12 @@
 
 .description .collapse .collapse__title {
     height: 52px;
+    width: 90%;
 }
 
 .description .collapse .collapse__text {
     height: 249px;
+    width: 90%;
 }
 
 .star{
@@ -233,6 +235,7 @@
             }
             .collapse__text {
                 height: 143px;
+                width: 100%;
                 p {
                     font-size: 12px;
                 }
