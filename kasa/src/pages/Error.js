@@ -9,7 +9,7 @@ const Error = () => {
       <h2>Oups! La page que vous demandez n'existe pas.</h2>
       <NavLink to="/" >
             <p className="nav__home">Retourner sur la page d'accueil</p>
-          </NavLink>
+      </NavLink>
     </main>
   );
 };
