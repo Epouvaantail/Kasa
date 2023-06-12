@@ -10,17 +10,13 @@ const Header = () => {
         <img src={logoKasa} alt="logo kasa" />
       </div>
       <nav className="navigation">
-          <NavLink
-            to="/"
-            className={({ isActive }) => {
+          <NavLink to="/" className={({ isActive }) => {
               return isActive ? "nav__link active__link" : "nav__link";
             }}
           >
             Accueil
           </NavLink>
-          <NavLink
-            to="/About"
-            className={({ isActive }) => {
+          <NavLink to="/About" className={({ isActive }) => {
               return isActive ? "nav__link active__link" : "nav__link";
             }}
           >

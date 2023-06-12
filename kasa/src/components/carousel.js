@@ -27,7 +27,6 @@ const Carousel = (images) => {
         }
       })
       
-
     return (
         <div className="carousel">
             <div className="carousel__container">
